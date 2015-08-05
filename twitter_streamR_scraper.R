@@ -20,7 +20,7 @@ credential$handshake(cainfo="cacert.pem")
 
 #function to actually scrape Twitter
 filterStream( file.name="tweets_test.json",
-             track="twitter", tweets=1000, oauth=cred, timeout=10, lang='en' )
+             track="twitter", tweets=1000, oauth=credential, timeout=10, lang='en' )
 
 
 #Parses the tweets
